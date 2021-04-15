@@ -1,17 +1,6 @@
-import React from 'react'
-import Diagram from "./pages/Diagram";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import React from "react";
+import { Main } from './components/Main';
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path='/'>
-          <Diagram/>
-        </Route>
-      </Switch>
-    </BrowserRouter>
-  );
+export const App = () => {
+  return (<Main />);
 };
-
-export default App;
